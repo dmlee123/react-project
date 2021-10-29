@@ -3,7 +3,7 @@
 #### Overview
 
 Random Anime Generator with an "add to watch" list
-![gif](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F556335360220751380%2F&psig=AOvVaw0LiHqAhE0VzWZJ5mbtM4uu&ust=1635626079991000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDH2o688PMCFQAAAAAdAAAAABAJ)
+
 
 #### Motivation
 This is the 2nd project of our SEI course.  It will use React and all the extras that comes with it.  I plan to create a random anime generator where you can also add the show to your watchlist.
