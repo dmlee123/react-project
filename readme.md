@@ -2,27 +2,11 @@
 
 #### Overview
 
-Let's kick it up a notch and build a modular and modern front end application using React!
+Random Anime Generator with an "add to watch" list
+![gif](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F556335360220751380%2F&psig=AOvVaw0LiHqAhE0VzWZJ5mbtM4uu&ust=1635626079991000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDH2o688PMCFQAAAAAdAAAAABAJ)
 
-Like with project one, the Unit 2 project is a chance to be creative and build something you should be proud of. You will be working individually for this project. Show us what you've got!
-
-## Prerequistes
-
-In order to help set you up for success you are required to do the following before you attempt to plan out your project:
-
-#### Reading
-
-The [previous cohorts project retrospective](previous-class-project-retrospective.md)
-
-There are alot of helpful hints and hindsight that were captured after the completion of project 2 which are sure to help provide some guidance on what to and not to do during this project.
-
-#### Watch
-
-[Mastering Markdown](https://masteringmarkdown.com/) - 34min
-
-You will need to write and update markdown for this project as will be the case for all future projects so it's your responsibility to become familiar with the syntax.
-
----
+#### Motivation
+This is the 2nd project of our SEI course.  It will use React and all the extras that comes with it.  I plan to create a random anime generator where you can also add the show to your watchlist.
 
 ## Requirements
 
@@ -39,51 +23,6 @@ You will need to write and update markdown for this project as will be the case 
 - Use React Hooks
 - Be deployed on github pages https://github.com/gitname/react-gh-pages
 
-### 📋 List of API's
-
-Pull data into the application using an API
-
-- [List of Public APIs](https://github.com/toddmotto/public-apis)
-- [More APIs](https://github.com/abhishekbanthia/Public-APIs)
-
-Below is a non-exhaustive list of some free API's you can use. There are _many_ API's out there, however, so if you find one not on this list that you'd like to use, feel free! Please note that some may require signing up for an API key (e.g. the Marvel API).
-
-1. Marvel: https://developer.marvel.com/
-1. Star Wars: https://swapi.co/
-1. Weather: https://openweathermap.org/api
-1. News: https://newsapi.org/
-1. Giphy: https://developers.giphy.com/
-1. Pokemon: http://pokeapi.co/
-1. Card Deck: https://deckofcardsapi.com/
-1. Google Books: https://developers.google.com/books/
-1. City of Chicago: https://data.cityofchicago.org/
-1. Beer: https://www.brewerydb.com/developers
-1. Chuck Norris: http://www.icndb.com/
-1. Rick and Morty: https://rickandmortyapi.com/documentation/#rest
-
-Lastly, the following sites congregates a bunch of API's together, so you can take a look through their libraries and try to find an API that interests you! Note, however, that not all API's are free and many listed may require payment. We **highly suggest** to use a free API for your first project dealing with one.
-
-1. https://github.com/toddmotto/public-apis
-1. https://rapidapi.com/
-
-### Additional APIs
-
-#### Music
-
-- https://bandcamp.com/developer
-- https://developers.soundcloud.com/docs/api/reference
-
-#### Gov
-
-- https://developer.cityofnewyork.us/api/open311-inquiry
-
-#### Games
-
-- https://igdb.github.io/api/
-
-#### Social Media
-
-- https://developer.twitter.com/en/docs/tweets/search/overview
 
 #### Your code must:
 
@@ -94,50 +33,6 @@ Lastly, the following sites congregates a bunch of API's together, so you can ta
 - Use only React for DOM manipulation.
 - No pre-loaded `create-react-app` files or code.
 
-## Necessary Deliverables
 
-#### Commits
-
-- Repo must contain frequent commits (min 15+) dating back to the beginning of the project.
-
-#### A Professional README
-
-- Refer to this [blog](https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3) as a great resource on how to create a readme.
-
-#### A Completed Project Proposal:
-
-- Refer to the [project worksheet](/project-worksheet.md) file in this repo for structuring your Proposal.
-
-#### For the project:
-
-- A git repository hosted on GitHub, with a link to your hosted project, and **frequent** commits dating back to the very beginning of the project (YOUR APP SHOULD BE LOCATED IN A SEPARATE STANDING REPO. DO NOT build your app in this repository. YOU MUST initiate a new repo on your GitHub account.)
-
-<hr>
-
-## Tips
-
-Read the following articles posted by previous students into how they planned and organized their thoughts into building a unit project.
-
-- [REACT.js : A Haunting by Sami Schonefeld
-  ](https://medium.com/@samischonefeld/react-js-a-haunting-cd2aaf15541f)
-- [how-i-built-my-first-obama-themed-javascript-game by Sarah Currey
-  ](https://medium.com/@sarah.currey/how-i-built-my-first-obama-themed-javascript-game-b06f7c62af4c)
-
--Commit early, commit often: Don't be afraid to break something because you can always go back in time to a previous version.
-
-## Check out these awesome websites for inspiration
-
-- https://www.foursquare.com
-- https://www.nike.com
-- https://www.airbnb.com
-- https://www.stripe.com
-- https://www.etsy.com
-- https://www.moma.org
-- https://www.nytimes.com
-- https://www.mint.com
-- https://www.popeyes.com
-- https://www.bk.com/menu/burgers
-
-## A Note on Plagiarism
-
-Take a moment to re-familiarize yourself with the [plagiarism policy](https://git.generalassemb.ly/seir-1118/Administrative/blob/master/plagiarism.md), specifically on using work you find online and on work you do with other students.
+#### Author
+- Daniel Lee
