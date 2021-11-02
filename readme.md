@@ -36,3 +36,4 @@ This is the 2nd project of our SEI course.  It will use React and all the extras
 
 #### Author
 - Daniel Lee
+# react-project
