@@ -1,17 +1,23 @@
 import './App.css';
+import React, { useState } from 'react';
+import RandomAnime from './Components/RandomAnime/RandomAnime';
 
 function App() {
 
-const [animeList, setAnimeList] = useState();
 
 
-
-
-  return (
-    <div className="App">
   
-    </div>
-  );
+	return (
+		<div className='App'>
+			<nav>
+
+      </nav>
+
+      <main>
+      <RandomAnime />
+      </main>
+		</div>
+	);
 }
 
 export default App;
