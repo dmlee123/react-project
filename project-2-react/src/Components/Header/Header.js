@@ -5,14 +5,12 @@ import Navbar from 'react-bootstrap/Navbar';
 
 const Header = () => {
 	return (
-		<Navbar bg='primary' variant='dark'>
+		<Navbar bg="primary" variant="dark" sticky= "top">
 			<Container>
-				<Navbar.Brand href='#home'>Navbar</Navbar.Brand>
-				<Nav className='me-auto'>
-					<Nav.Link href='#home'>Home</Nav.Link>
-					<Nav.Link href='#features'>Features</Nav.Link>
-					<Nav.Link href='#pricing'>Pricing</Nav.Link>
-				</Nav>
+				<Navbar.Brand href = "/">Random Anime</Navbar.Brand>
+				<Navbar.Toggle />
+				<Navbar.Collapse className='justify-content-end'>
+				</Navbar.Collapse>
 			</Container>
 		</Navbar>
 	);

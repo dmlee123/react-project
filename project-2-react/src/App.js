@@ -1,27 +1,35 @@
 import './App.css';
 import React, { useState } from 'react';
 import RandomAnime from './Components/RandomAnime/RandomAnime';
-import Main from './Components/Main.js/Main';
+import Main from './Components/Main/Main';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
+import './Components/Footer/Footer.css';
+import './Components/Header/Header.css';
+import './Components/Main/Main.css';
+import './Components/RandomAnime/RandomAnime.css';
+import { Link, Route } from 'react-router-dom';
 
 function App() {
 
 
 
-  
 	return (
 		<div className='App'>
 			<nav>
+				<Link to='/'></Link>
+			</nav>
 
-      </nav>
-      <Header />
-      <Main />
-      <main>
-      <RandomAnime />
-      </main>
-      <Footer />
+			<main>
+				<Route  path='/' component={Header} />
+				<Route exact path='/' component={Main} />
+        <Route exact path ='/RandomAnime' component = {RandomAnime} />
+			</main>
+
+			<footer>
+				<Route  path='/' component={Footer} />
+			</footer>
 		</div>
 	);
 }
