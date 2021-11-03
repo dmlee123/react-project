@@ -3,9 +3,8 @@ import WatchList from '../WatchList/WatchList';
 
 const RandomAnime = () => {
 	const [anime, setRandomAnime] = useState([]);
-	const [addAnime, SetAddAnime] = useState([]);
 
-	const random = Math.floor(Math.random() * 500);
+	const random = Math.floor(Math.random() * 1000);
 
 	const handleRandomClick = () => {
 		fetch(`https://api.jikan.moe/v3/anime/${random}`)
@@ -17,13 +16,12 @@ const RandomAnime = () => {
 	};
 
 	const addAnimeToList = () => {
-		console.log(addAnime);
-		SetAddAnime(addAnime);
+		console.log(anime);
 	};
 
 	const animeJSX = (
-		<div>
-			<img src={anime.image_url} alt={anime.rank} /> <p>{anime.title}</p>
+		<div className='RandomAnime'>
+			<img src={anime.image_url} alt={anime.rank} /> <h2>{anime.title}</h2>
 			<p>{anime.synopsis}</p>
 			<button onClick={addAnimeToList}>Add to Watch List</button>
 		</div>
@@ -33,7 +31,6 @@ const RandomAnime = () => {
 		<div className='RandomAnime'>
 			<button onClick={handleRandomClick}>Random Anime</button>
 			{animeJSX}
-			<WatchList />
 		</div>
 	);
 };

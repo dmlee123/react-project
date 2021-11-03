@@ -2,4 +2,13 @@
 	position: fixed;
 	bottom: 0;
 	left: 0;
+	font-size: 20px;
+}
+
+#root > div > footer > footer > img {
+	position: fixed;
+	bottom: -170px;
+	right: -170px;
+	font-size: 20px;
+	
 }

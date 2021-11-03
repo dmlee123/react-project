@@ -1,8 +1,11 @@
 import React from "react";
 
-const WatchList = () => {
+const WatchList = (props) => {
+    console.log(props)
     return (
-        <div className = "WatchList"></div>
+        <div className = "WatchList">
+            <h2>My Watch List</h2>
+        </div>
     )
 }
 
