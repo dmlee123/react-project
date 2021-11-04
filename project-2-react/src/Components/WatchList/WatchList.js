@@ -10,7 +10,7 @@ const WatchList = (props) => {
 			<>
 				<h2>My List</h2>
 				<p>
-					{props.selectedAnime}
+					{props.selectedAnime} &nbsp;
 					<button onClick={props.removeAnimeFromList}>Remove from list</button>
 				</p>
 			</>
