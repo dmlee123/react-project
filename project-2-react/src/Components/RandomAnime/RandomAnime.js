@@ -17,6 +17,7 @@ const RandomAnime = () => {
 
 	const addAnimeToList = () => {
 		console.log(anime);
+
 	};
 
 	const animeJSX = (
@@ -31,6 +32,7 @@ const RandomAnime = () => {
 		<div className='RandomAnime'>
 			<button onClick={handleRandomClick}>Random Anime</button>
 			{animeJSX}
+			
 		</div>
 	);
 };

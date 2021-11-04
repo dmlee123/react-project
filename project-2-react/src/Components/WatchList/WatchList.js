@@ -4,7 +4,7 @@ const WatchList = (props) => {
     console.log(props)
     return (
         <div className = "WatchList">
-            <h2>My Watch List</h2>
+          <h2>Watch List</h2>
         </div>
     )
 }

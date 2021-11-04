@@ -12,19 +12,22 @@ import { Link, Route } from 'react-router-dom';
 import WatchList from './Components/WatchList/WatchList';
 import './Components/WatchList/WatchList.css';
 
+
 function App() {
+
+
+
 	return (
 		<div className='App'>
 			<nav>
 				<Link to='/'></Link>
-				
 			</nav>
 
 			<main>
 				<Route path='/' component={Header} />
 				<Route exact path='/' component={Main} />
 				<Route exact path='/RandomAnime' component={RandomAnime} />
-				<Route exact path = "/WatchList" component={WatchList} />
+				<Route exact path='/WatchList' component={WatchList} />
 			</main>
 
 			<footer>
