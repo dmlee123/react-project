@@ -1,8 +1,18 @@
 #root > div > main > p {
 	font-size: 30px;
 	text-align: center;
+	color:rgb(94, 94, 94)
 }
 
-/* #root > div > main > p{
-	background-color: peachpuff;
-} */
+#root > div > main > p{
+	background-color: rgb(238, 223, 135);
+}
+
+#root > div > main > p > strong{
+	color: black;
+	font-size: 40px;
+}
+
+#root > div > main > p > div > a > img{
+	max-width: 100%;
+}

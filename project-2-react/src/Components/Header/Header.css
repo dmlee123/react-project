@@ -1,8 +1,13 @@
 #root > div > main > nav {
-	background-color: darkgrey;
+	background-color: goldenrod;
 	font-size: 25px;
 }
 
 #root > div > main > nav > a:nth-child(2) {
-	float: right;
+	display: none;
+}
+
+#home {
+	text-decoration: none;
+	color:black
 }

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
 	return (
 		<nav className= "Nav">
-			<a href='/'>Random Anime Generator</a>
+			<a id = "home" href='/'>Home</a>
 			<Link to='/WatchList'> Watch List</Link>
 		</nav>
 	);

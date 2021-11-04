@@ -2,10 +2,10 @@
     text-align: center;
 }
 
-/* html{
-    background-color: peachpuff;
+html{
+    background-color: rgb(238, 223, 135);
 }
 
 #root > div > main > div {
-    background-color: peachpuff;
-} */
+    background-color: rgb(238, 223, 135);
+}

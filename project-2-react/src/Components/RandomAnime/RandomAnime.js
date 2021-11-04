@@ -22,11 +22,14 @@ const RandomAnime = () => {
 		setSelectedAnime(title)
 	};
 
+	const removeAnimeFromList = () => {
+	
+	}
+
 	let animeJSX = "";
 	if (anime.title) {
 		animeJSX = (
 		<div className='RandomAnime'>
-			
 			<br /><img src={anime.image_url} alt={anime.rank} /> <h2>{anime.title}</h2>
 			<p>{anime.synopsis}</p>
 			<button onClick= {() => {addAnimeToList(anime.title)}}>Add to List</button>
@@ -41,7 +44,7 @@ const RandomAnime = () => {
 		<div className='RandomAnime'>
 			<button onClick={handleRandomClick}>Random Anime </button>
 			{animeJSX}
-			<WatchList selectedAnime={selectedAnime} />
+			<WatchList selectedAnime={selectedAnime}  />
 		</div>
 	);
 };

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Main = () => {
 	return (
 		<p>
-			Hello! This app will randomly generate an anime which you can then add to
+			Hello! This app will randomly generate an <strong>anime</strong> which you can then add to
 			a watch list. Click the image below to continue!
 			<div>
 				<Link to='/RandomAnime'>

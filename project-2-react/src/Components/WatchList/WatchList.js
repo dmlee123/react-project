@@ -4,8 +4,8 @@ const WatchList = (props) => {
     console.log(props)
     return (
         <div className = "WatchList">
-            <h2><br />Watch List</h2>
-         <li>{props.selectedAnime}</li>
+            <h2><br />My List</h2>
+         <p>{props.selectedAnime} </p>
         </div>
     )
 }
