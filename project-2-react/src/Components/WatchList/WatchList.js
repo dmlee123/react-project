@@ -1,9 +1,8 @@
 import React from 'react';
 
 const WatchList = (props) => {
-	console.log(props);
+	// console.log(props);
 
-    
 	let watchListJSX = '';
 	if (props.selectedAnime) {
 		watchListJSX = (

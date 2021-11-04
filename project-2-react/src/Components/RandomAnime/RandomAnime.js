@@ -15,8 +15,8 @@ const RandomAnime = () => {
 		await doc.useServiceAccountAuth(creds);
 		await doc.loadInfo();
 		let dataRows = await doc.sheetsByIndex[0].getRows();
-		console.log(doc.sheetsByIndex[0]);
-		console.log(dataRows);
+		// console.log(doc.sheetsByIndex[0]);
+		// console.log(dataRows);
 	};
 	useEffect(() => {
 		makeInitialCall();
@@ -34,11 +34,10 @@ const RandomAnime = () => {
 		fetch(`https://api.jikan.moe/v3/anime/${random}`)
 			.then((response) => response.json())
 			.then((data) => {
-				console.log(data);
+				// console.log(data);
 				setRandomAnime(data);
 			});
 	};
-
 
 	// old way of adding anime
 	// const addAnimeToList = (title,) => {
