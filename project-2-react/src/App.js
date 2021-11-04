@@ -13,6 +13,12 @@ import WatchList from './Components/WatchList/WatchList';
 import './Components/WatchList/WatchList.css';
 
 function App() {
+
+
+
+
+
+	
 	return (
 		<div className='App'>
 			<nav>

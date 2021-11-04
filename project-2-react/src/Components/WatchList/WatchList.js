@@ -1,13 +1,23 @@
-import React from "react";
+import React from 'react';
 
 const WatchList = (props) => {
-    console.log(props)
-    return (
-        <div className = "WatchList">
-            <h2><br />My List</h2>
-         <p>{props.selectedAnime} </p>
-        </div>
-    )
-}
+	console.log(props);
+
+    
+	let watchListJSX = '';
+	if (props.selectedAnime) {
+		watchListJSX = (
+			<>
+				<h2>My List</h2>
+				<p>
+					{props.selectedAnime}
+					<button onClick={props.removeAnimeFromList}>Remove from list</button>
+				</p>
+			</>
+		);
+	}
+
+	return <div className='WatchList'>{watchListJSX}</div>;
+};
 
 export default WatchList;

@@ -1,18 +1,26 @@
 #root > div > main > p {
 	font-size: 30px;
 	text-align: center;
-	color:rgb(94, 94, 94)
+	color: rgb(94, 94, 94);
 }
 
-#root > div > main > p{
+#root > div > main > p {
 	background-color: rgb(238, 223, 135);
 }
 
-#root > div > main > p > strong{
+#root > div > main > p > strong {
 	color: black;
 	font-size: 40px;
 }
 
-#root > div > main > p > div > a > img{
+#root > div > main > p > div > a > img {
 	max-width: 100%;
+}
+
+#root > div > main > p > div > a > img:hover {
+	transform: scale(1.1);
+}
+
+#h3 {
+	color: black;
 }
