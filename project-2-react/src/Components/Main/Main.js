@@ -1,20 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-
 const Main = () => {
 
-	// const [animeQuote, setAnimeQuote] = useState("");
+	//another API I made but it has a limit so dont want to break website
+	// const [animeQuote, setAnimeQuote] = useState('');
 
-	// useEffect(() => {
-	// 	const movieUrl = 'https://animechan.vercel.app/api/random';
-	// 	const makeApiCall = async () => {
-	// 		const res = await fetch(movieUrl);
-	// 		const json = await res.json();
-	// 		setAnimeQuote(json);
-	// 	};
-	// 	makeApiCall();
-	// }, []);
+	// const handleRandomQuote = () => {
+	// 	fetch('https://animechan.vercel.app/api/random')
+	// 		.then((response) => response.json())
+	// 		.then((data) => {
+	// 			console.log(data);
+	// 			setAnimeQuote(data);
+	// 		});
+	// };
+
+	// let quoteJSX = '';
+	// if (animeQuote.anime) {
+	// 	quoteJSX = (
+	// 		<div className='RandomQuote'>
+	// 			<p>{animeQuote.quote}</p>
+	// 			<p>Anime: {animeQuote.anime}</p>
+	// 			<p>{animeQuote.character}</p>
+	// 		</div>
+	// 	);
+	// }
 
 	return (
 		<>
@@ -30,11 +40,13 @@ const Main = () => {
 						/>
 					</Link>
 				</div>
-			</p> 
-			{/* add button here for random quote */}
-			{/* <p> {animeQuote.quote ? animeQuote.quote : null}</p>
-			<p> {animeQuote.anime ? animeQuote.anime : null}</p>
-			<p> {animeQuote.character ? animeQuote.character : null}</p> */}
+			</p>
+			{/* <br />
+			<button className='RandomQuoteButton' onClick={handleRandomQuote}>
+				random quote
+			</button>
+			<br />
+			{quoteJSX} */}
 		</>
 	);
 };

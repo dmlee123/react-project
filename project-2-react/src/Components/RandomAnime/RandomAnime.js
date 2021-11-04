@@ -39,16 +39,17 @@ const RandomAnime = () => {
 			});
 	};
 
-	//this gets me a string which I was able to successfully use to add to my list but not sure how to add multiples
 
+	// old way of adding anime
 	// const addAnimeToList = (title,) => {
 	// 	console.log(title);
 	// 	setSelectedAnime(title);
 	// };
 
-	const removeAnimeFromList = () => {
-		setSelectedAnime('');
-	};
+	// old of removing anime
+	// const removeAnimeFromList = () => {
+	// 	setSelectedAnime('');
+	// };
 
 	let animeJSX = '';
 	if (anime.title) {
@@ -73,7 +74,7 @@ const RandomAnime = () => {
 			{animeJSX}
 			<WatchList
 				selectedAnime={selectedAnime}
-				removeAnimeFromList={removeAnimeFromList}
+				// removeAnimeFromList={removeAnimeFromList}
 			/>
 		</div>
 	);
