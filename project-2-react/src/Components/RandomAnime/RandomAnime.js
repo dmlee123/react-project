@@ -1,9 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import WatchList from '../WatchList/WatchList';
+const { GoogleSpreadsheet } = require('google-spreadsheet');
+const creds = require('./client_secret.json');
+let doc = {};
 
 const RandomAnime = () => {
 	const [anime, setRandomAnime] = useState([]);
 	const [selectedAnime, setSelectedAnime] = useState();
+
+	const [name, setName] = useState('');
+
+	const makeInitialCall = async () => {
+		doc = new GoogleSpreadsheet('14GY2g8HK9MeBcGz8n499oeCPBShHGyw-2FjUzK9tu2k');
+		await doc.useServiceAccountAuth(creds);
+		await doc.loadInfo();
+		let dataRows = await doc.sheetsByIndex[0].getRows();
+		console.log(doc.sheetsByIndex[0]);
+		console.log(dataRows);
+	};
+	useEffect(() => {
+		makeInitialCall();
+	}, []);
+
+	const handleSubmit = async (title) => {
+		setName(title);
+		let sheet = await doc.sheetsByIndex[0];
+		sheet.addRow({ Name: name });
+	};
 
 	const random = Math.floor(Math.random() * 1000);
 
@@ -17,10 +40,11 @@ const RandomAnime = () => {
 	};
 
 	//this gets me a string which I was able to successfully use to add to my list but not sure how to add multiples
-	const addAnimeToList = (title,) => {
-		console.log(title);
-		setSelectedAnime(title);
-	};
+
+	// const addAnimeToList = (title,) => {
+	// 	console.log(title);
+	// 	setSelectedAnime(title);
+	// };
 
 	const removeAnimeFromList = () => {
 		setSelectedAnime('');
@@ -35,7 +59,7 @@ const RandomAnime = () => {
 				<p>{anime.synopsis}</p>
 				<button
 					onClick={() => {
-						addAnimeToList(anime.title);
+						handleSubmit(anime.title);
 					}}>
 					Add to List
 				</button>
